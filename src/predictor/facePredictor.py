@@ -1,7 +1,7 @@
 from mtcnn import MTCNN
 
 from src.insightface.deploy import face_model
-from src.com_in_ineuron_ai_detectfaces_mtcnn.Configurations import ConfigurationsPOJO
+from src.detectfaces_mtcnn.Configurations import ConfigurationsPOJO
 import warnings
 import sys
 import dlib
@@ -26,7 +26,7 @@ class FacePredictor():
             self.model = "./insightface/models/model-y1-test2/model,0"
             self.threshold = 1.24
             self.det = 0
-            self.model_filename = '../src/com_in_ineuron_ai_sorting/model_data/mars-small128.pb'
+            self.model_filename = '../src/sorting/model_data/mars-small128.pb'
 
             # # Initialize detector
             self.detector = MTCNN()

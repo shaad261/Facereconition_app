@@ -9,8 +9,8 @@ import argparse
 import pickle
 
 # Construct the argumet parser and parse the argument
-from src.com_in_ineuron_ai_detectfaces_mtcnn.Configurations import get_logger
-from src.com_in_ineuron_ai_training.softmax import SoftMax
+from src.detectfaces_mtcnn.Configurations import get_logger
+from src.training.softmax import SoftMax
 
 
 class TrainFaceRecogModel:
